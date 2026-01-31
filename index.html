@@ -9,29 +9,38 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="src/logo_ceal.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
+        <svg style="padding-top: 2em;" class="toggle-menu" heigth="50px" width="50px" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 15.75c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg>
         <img src="src/logo_ceal.png" height="70px" width="70px">
         <h1>Centro de Estudiantes - Ingeniería Civil en Computación e Informática</h1>
     </header>
 
+
     <main>
 
+
         <aside>
-            <h3>Contenidos</h3>
+
+            <div class="aside-content">
+                <h3>Contenidos</h3>
                 <ul>
-                    <li>Páginas de Interés</li>
-                    <li>Páginas de Instagram</li>
-                    <li>Correos</li>
+                    <li><a href="#pages">Páginas de Interés</a></li>
+                    <li><a href="#social-media">Páginas de Instagram</a></li>
+                    <li><a href="#emails">Correos</a></li>
                 </ul>
+            </div>
         </aside>
+
 
         <div class="information-section">
             <h1>Bienvenido(a):</h1>
 
-        <div class="container-table">
+
+        <div class="container-table" id="pages">
             <p class="container-table-parragraph">Páginas de Interés</p>
             <table>
             <thead>
@@ -96,7 +105,8 @@
             </table>
         </div>
 
-        <div class="container-table">
+
+        <div class="container-table" id="social-media">
             <p class="container-table-parragraph">Páginas de Instagram</p>
             <table>
             <thead>
@@ -156,7 +166,8 @@
             </table>
         </div>
 
-        <div class="container-table">
+
+        <div class="container-table" id="emails">
             <p class="container-table-parragraph">Correos de Contacto</p>
             <table>
             <thead>
@@ -200,12 +211,15 @@
         </div>
 
 
+
     </main>
+
 
     <footer>
       <p>&copy; bxnjadev</p>
     </footer>
 
-    <script src="main.js" defer></script>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
