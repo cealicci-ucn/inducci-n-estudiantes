@@ -1,0 +1,129 @@
+body {
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 2.5px;
+    background-color: #f9fafb;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 1em;
+}
+
+table a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+table a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+header img {
+    margin-left: 10%;
+}
+
+.container-table {
+    margin-bottom: 3em;
+}
+
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+main h1 {
+    font-size: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    border: 1px solid #f9fafb;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;      
+
+}
+
+header h1 {
+    font-size: 1.25rem; 
+    font-weight: 600;
+    padding-left: 1em;
+    text-align: left;
+}
+
+tbody th {
+    font-size: 15px;
+}
+
+th {
+    padding: 0.75em;
+}
+
+table thead tr th {
+    border-bottom: 1px solid #cacaca;
+    background-color: #f9fafb; 
+
+    font-weight: normal;
+}
+
+table tbody tr th {
+    font-weight: normal;
+    border-bottom: 1px solid #cacaca;
+    text-align: left;
+}
+
+.container-table-parragraph {
+    padding: 0px;
+    margin: 0px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+footer {
+    margin-top: 1em;
+    padding: 0.25em;
+    color: white;
+    background-color: black;
+    font-weight: normal;
+}
+
+footer p {
+    margin-left: 2em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    header h1 {
+        font-size: 1em; 
+        font-weight: 400;
+        padding-left: 0.5em;
+        text-align: left;
+    }
+
+    header img {
+        height: 50px;
+        width: 50px;
+    }
+
+}
