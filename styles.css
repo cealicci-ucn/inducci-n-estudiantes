@@ -307,4 +307,12 @@ main h2 {
         justify-content: center;
     }
 
+    th {
+        font-size: 12px;
+    }
+
+    tbody th {
+        font-size: 12px;
+    }
+
 }
