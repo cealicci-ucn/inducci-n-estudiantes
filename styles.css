@@ -74,6 +74,41 @@ main {
     width: 350px;
     border: 1px solid #ffffff;
     border-radius: 8px;
+
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+}
+
+.semana-induccion-dia:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    
+}
+
+.semana-induccion-dia::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    background-color: linear-gradient(135deg, rgba(179,235, 242, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.semana-induccion:hover::before {
+    opacity: 1;
+}
+
+.semana-induccion-dia-parte-inicial svg {
+    transition: transform 0.3 ease;
+}
+
+.semana-induccion-dia:hover .semana-induccion-dia-parte-inicial svg {
+    transform: rotate(360deg);
 }
 
 .semana-induccion-dia-parte-inicial {
@@ -229,8 +264,23 @@ hr {
 }
 
 
+.archivos-de-interes ul {
+    list-style: none;
+}
+
+.archivos-de-interes li {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.archivos-de-interes a {
+    color: black;
+}
+
+
 aside {
-    width: 200px;
+    width: 250px;
     position: sticky;
     top: 2em;
     align-self: flex-start;
@@ -376,13 +426,13 @@ footer {
 
 
 @media (max-width: 768px) {
+
     main {
         padding-left: 5%;
         padding-right: 5%;
-        display: block; /* Cambiar de flex a block */
+        display: block; 
     }
 
-    /* Botón fijo en la esquina o en la parte superior */
     .toggle-menu {
         display: block;
         width: auto;
@@ -399,7 +449,6 @@ footer {
         z-index: 998;
     }
     
-    /* Sidebar oculto por defecto */
     aside {
         position: fixed;
         top: 0;
@@ -423,7 +472,6 @@ footer {
         display: block;
     }
 
-    /* Botón de cerrar dentro del sidebar (opcional) */
     aside .close-btn {
         display: block;
         width: 100%;
