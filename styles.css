@@ -53,6 +53,89 @@ main {
 }
 
 
+.semana-induccion-apartado {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.semana-induccion-dia {
+    width: 350px;
+    border: 1px solid #cacaca;
+    border-radius: 8px;
+}
+
+.semana-induccion-dia-parte-inicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #B3EBF2;
+        
+    border-radius: 7px 7px 0px 0px;
+}
+
+.semana-induccion-dia-parte-inicial p {
+    margin-bottom: 9px;
+    margin-top: 9px;
+}
+
+.semana-induccion h3 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.semana-induccion-titulo {
+    background-color: #B3EBF2;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.semana-induccion-apartado h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    background-color: #B3EBF2;
+
+    border-radius: 0px 0px 7px 7px;
+}
+
+.semana-induccion-titulo h2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    font-weight: normal;
+}
+
+.semana-induccion-dia-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    height: 150px;
+
+    
+}
+
+.semana-induccion-dia-contenido-parte {
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid #E5E5E5;
+    background-color: #E5E5E5;
+
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
 main h1 {
     font-size: 25px;
 }
@@ -125,6 +208,14 @@ tbody tr:nth-child(even) {
 .toggle-menu {
     display: none;
 }
+
+hr {
+ border: none;
+  height: 1px;
+  background-color: #e5e7eb; 
+  margin: 20px 0;
+}
+
 
 aside {
     width: 200px;
@@ -313,6 +404,10 @@ main h2 {
 
     tbody th {
         font-size: 12px;
+    }
+
+    .semana-induccion-apartado {
+        flex-direction: column;
     }
 
 }
