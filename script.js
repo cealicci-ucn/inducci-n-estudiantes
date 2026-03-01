@@ -8,6 +8,7 @@ const closeBtn = document.getElementById('cerrar-calendario');
 
 abrirCalendario.addEventListener('click', () => {
     modal.showModal();
+    modal.scrollTop = 0;
 })
 
 closeBtn.addEventListener('click', () => {
