@@ -1,6 +1,19 @@
 const btn = document.querySelector('.toggle-menu');
 const aside = document.querySelector('aside');
 
+const modal = document.getElementById('tutorial-calendario');
+
+const abrirCalendario = document.getElementById('abrir-calendario');
+const closeBtn = document.getElementById('cerrar-calendario');
+
+abrirCalendario.addEventListener('click', () => {
+    modal.showModal();
+})
+
+closeBtn.addEventListener('click', () => {
+    modal.close();
+})
+
 const overlay = document.createElement('div');
 overlay.className = 'overlay';
 document.body.appendChild(overlay);
@@ -22,3 +35,4 @@ sidebarLinks.forEach(link => {
         overlay.classList.remove('active');
     });
 });
+
